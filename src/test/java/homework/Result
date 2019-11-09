@@ -1,0 +1,84 @@
+package homework;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+public class Result {
+
+    @FindBy(how = How.CLASS_NAME, using = "img-responsive")
+    WebElement girlImg;
+
+    @FindBy(how = How.CLASS_NAME, using = "img-responsive")
+    WebElement offImg;
+
+    @FindBy(how = How.CLASS_NAME, using = "img-responsive")
+    WebElement getImg;
+
+    @FindBy(how = How.XPATH, using = "//span[@class='shop-phone']")
+    WebElement callUsImg;
+
+    @FindBy(how = How.XPATH, using = "//span[@class='shop-phone']")
+    WebElement telNumberImg;
+
+    @FindBy(how = How.ID, using = "contact-link")
+    WebElement contactUsImg;
+
+    @FindBy(how = How.XPATH, using = "//div/a[text()[contains(.,'Sign in')]]")
+    WebElement singInText;
+
+    @FindBy(how = How.ID, using = "search_query_top")
+    WebElement search;
+
+    @FindBy(how = How.CLASS_NAME, using = "ajax_cart_no_product")
+    WebElement cart;
+
+    @FindBy(how = How.XPATH, using = "//a[@href='http://automationpractice.com/index.php?id_category=3&controller=category']")
+    WebElement women;
+
+    @FindBy(how = How.XPATH, using = "//a[@href='http://automationpractice.com/index.php?id_category=8&controller=category']")
+    WebElement dresses;
+
+    @FindBy(how = How.XPATH, using = "//i[@class = 'icon-home']")
+    WebElement home;
+
+    @FindBy(how = How.CLASS_NAME, using = "navigation_page")
+    WebElement authenticationBtn;
+
+    @FindBy(how = How.CLASS_NAME, using = "page-heading")
+    WebElement authenticationText;
+
+    @FindBy(how = How.CLASS_NAME, using = "page-subheading")
+    WebElement anAccountText;
+
+    @FindBy(how = How.XPATH, using = "//p[ text()= 'Please enter your email address to create an account.']")
+    WebElement enterEmailText;
+
+    @FindBy(how = How.CLASS_NAME, using = "//label[@for = 'email']")
+    WebElement emailAdressText;
+
+    @FindBy(how = How.ID, using = "email_create")
+    WebElement emailAdressInput;
+
+    @FindBy(how = How.ID, using = "SubmitCreate")
+    WebElement createAnAccountBtn;
+
+    @FindBy(how = How.CLASS_NAME, using = "page-subheading")
+    WebElement alreadyText;
+
+    @FindBy(how = How.XPATH, using = "//form[@id = 'login_form']/div/div/label[@for = 'email']")
+    WebElement emailAdressRegisText;
+
+    @FindBy(how = How.ID, using = "email")
+    WebElement emailAdressRegisInput;
+
+    @FindBy(how = How.XPATH, using = "//form[@id = 'login_form']/div/div/label[@for = 'passwd']")
+    WebElement passwordText;
+
+    @FindBy(how = How.XPATH, using = "//p[@class = 'lost_password form-group']")
+    WebElement forgotPasswordText;
+
+    @FindBy(how = How.ID, using = "SubmitLogin")
+    WebElement singInBtn;
+
+}
